@@ -1,0 +1,71 @@
+.genre-filter {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.genre-filter h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #1a237e;
+}
+
+.genres-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.genre-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.genre-item:hover {
+  background-color: #f0f0f0;
+}
+
+.genre-item.selected {
+  background-color: #e3f2fd;
+}
+
+.genre-item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.genre-item input {
+  margin-right: 10px;
+}
+
+.genre-loader, .no-genres {
+  color: #666;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* Стилизация скроллбара */
+.genres-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.genres-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.genres-list::-webkit-scrollbar-thumb {
+  background: #c5cae9;
+  border-radius: 3px;
+}
+
+.genres-list::-webkit-scrollbar-thumb:hover {
+  background: #9fa8da;
+} 
